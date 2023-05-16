@@ -1,5 +1,4 @@
 from pages.base_page import BasePage
-# from pages.basket_page import BasketPage
 from Locators.Locators import Locators
 
 class AddedToBasket(BasePage):
