@@ -1,5 +1,4 @@
 from pages.base_page import BasePage
-from pages.empty_basket_page import EmptyBasketPage
 from Locators.Locators import Locators
 
 
@@ -51,7 +50,3 @@ class BasketPage(BasePage):
     def shipping_cost(self):
         """Get shipping costs"""
         return self.driver.find_element(*Locators.SHIPPING_COST)
-
-
-
-

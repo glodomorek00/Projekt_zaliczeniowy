@@ -10,7 +10,7 @@ class SalePage(BasePage):
     def get_filtered_products(self):
         """Filter by size '37.5' and gender 'Women's'"""
         self.driver.find_element(*Locators.FILTR_SORT).click()
-        self.driver.find_element(*Locators.MORE_SIZE).click()
+        self.driver.find_element(*Locators.SHOW_ALL).click()
         self.driver.find_element(*Locators.CHOOSE_SIZE).click()
         self.driver.find_element(*Locators.CHOOSE_GENDER_LIST).click()
         self.driver.find_element(*Locators.CHOOSE_GENDER).click()
@@ -24,5 +24,4 @@ class SalePage(BasePage):
         """Select first element"""
         self.driver.find_element(*Locators.FIRST_ELEMENT).click()
         return
-
 

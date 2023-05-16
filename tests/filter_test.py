@@ -2,7 +2,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from pages.sale_page import SalePage
 from tests.base_test import BaseTest
-from selenium.webdriver.common.by import By
 from time import sleep
 from Locators.Locators import Locators
 
@@ -28,11 +27,10 @@ class FilterTest(BaseTest):
         # Get filter list content
         filter_list_content = sale_page_object.get_filter_content()
 
-        for filter in filter_list_content:
+        for item in filter_list_content:
 
             # Check filtered size and gender
-            lists = filter.find_elements(By.XPATH, '//a[@class="filter_list_remove btn --icon-right icon-x mr-2 mr-sm-3"]')
-            list_text = [list.text for list in lists]
+            list_text = item.text
             print("Applied Filters:", list_text)
             assert "37.5" in list_text
             assert "Women's" in list_text
@@ -47,6 +45,4 @@ class FilterTest(BaseTest):
 
     def tearDown(self):
         self.driver.quit()
-
-
 

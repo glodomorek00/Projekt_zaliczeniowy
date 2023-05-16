@@ -1,5 +1,5 @@
 from pages.basket_page import BasketPage
-from pages.added_to_basket import AddedToBasket
+from pages.added_to_basket_page import AddedToBasket
 from pages.product_page import ProductPage
 from pages.sale_page import SalePage
 from tests.base_test import BaseTest

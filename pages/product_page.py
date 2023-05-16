@@ -7,6 +7,14 @@ class ProductPage(BasePage):
         """Choose size for first element"""
         self.driver.find_element(*Locators.CHOOSE_SIZE_FIRST_ELEMENT).click()
 
+    def discount_element(self):
+        return self.driver.find_element(*Locators.DISCOUNT_ELEMENT)
+    def orginal_price_element(self):
+        return self.driver.find_element(*Locators.ORGINAL_PRICE_ELEMENT)
+
+    def discounted_price_element(self):
+        return self.driver.find_element(*Locators.DISCOUNTED_PRICE_ELEMENT)
+
     def gender_element(self):
         """Locate gender elemet"""
         return self.driver.find_element(*Locators.GENDER_ELEMENT)
@@ -19,4 +27,3 @@ class ProductPage(BasePage):
     def add_to_basket(self):
         """Add products to basket"""
         self.driver.find_element(*Locators.ADD_TO_BASKET).click()
-

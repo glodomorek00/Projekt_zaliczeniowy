@@ -5,7 +5,7 @@ from tests.base_test import BaseTest
 from pages.basket_page import BasketPage
 from pages.sale_page import SalePage
 from pages.product_page import ProductPage
-from pages.added_to_basket import AddedToBasket
+from pages.added_to_basket_page import AddedToBasket
 from pages.empty_basket_page import EmptyBasketPage
 
 
@@ -27,7 +27,6 @@ class BasketTest(BaseTest):
         # Choose size
         product_page_object = ProductPage(self.driver)
         product_page_object.choose_size()
-
 
         # Add to basket
         product_page_object.add_to_basket()
@@ -62,7 +61,7 @@ class BasketTest(BaseTest):
         no_products_message = empty_basket_page_object.empty_basket()
         no_products_message_text = no_products_message.text
         print("Tekst:", no_products_message_text)
-        assert no_products_message.is_displayed(),"Text 'Your basket is empty.' is not visable on the page"
+        assert no_products_message.is_displayed(),"Text 'Your basket is empty.' is not visble on the page"
 
 
     def click_close(self):
