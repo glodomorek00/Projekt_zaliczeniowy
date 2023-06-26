@@ -1,27 +1,26 @@
-# Projekt_zaliczeniowy
-PROJEKT: AUTOMATYZACJA TESTÓW STRONY INTERNETOWEJ W PYTHONIE
+# Project name
+Automation test of web application
 
-# Opis projektu
+# Description
 
-Projekt ma na celu przetestowanie aplikacji webowej runcolours.com przy użyciu języka
-programowania Python i wzorca projektowego Page Object Pattern w Selenium WebDriver.
-W tym celu opracowano 5 przypadków testowych:
-1: Sprawdzenie działania filtrów
-2: Sprawdzenie strony produktu
-3: Sprawdzenie działania strony koszyka
-4: Zmiana waluty
-5: Sprawdzenie kosztów produktu dodanego do koszyka
+The project aims to test the runcolours.com web application using the Python programming language and the Page Object Pattern design pattern in Selenium WebDriver.
+For this purpose, 5 test cases were developed:
+1. Checking the operation of filters.
+2. Checking the product page.
+3. Checking the operation of the shopping cart page.
+4. Changing the currency.
+5. Checking the cost of the product added to the cart.
 
-# Instrukcja uruchomienia
-1. Sklonuj repozytorium na swój lokalny komputer.
-2. Przejdź do katalogu projektu.
-3. Zainstaluj zależności za pomocą polecenia npm install.
-4. Uruchom projekt za pomocą npm start.
+# Start-up instruction
+1. Clone the repository to your local computer.
+2. Navigate to the project directory.
+3. Install the dependencies using the npm install command.
+4. Start the project using npm start.
 
-# Technologie wykorzystane w projekcie
+# Technologies used in the project
 
-1. Wzorzec Page Object.
+1. Page Object pattern.
 2. Pytest.
 3. Unittest. 
 4. Selenium Webdriver.
-5. Biblioteki Selenium (np. expected_conditions). 
+5. Selenium libraries(e.g. expected_conditions). 
