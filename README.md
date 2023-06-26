@@ -1,5 +1,5 @@
 # Project name
-Automation test of web application
+Automation test of web application in Selenium Webdriver
 
 # Description
 
